@@ -1,8 +1,5 @@
 package com.tachla.CRUD.managecrudbackendapi.login;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -31,7 +28,7 @@ public class LoginController {
       //Authentication logic
         // name and password should be admin admin
 
-        if(authenticationService.autheticateUser(name, password))
+        if(authenticationService.authenticate(name, password))
         return "welcome";
 
         model.put("errorMessage", "Invalid login or password!");
