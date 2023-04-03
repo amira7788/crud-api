@@ -88,7 +88,7 @@
 			<artifactId>h2</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-
+<!-- dependency mysql-connetor-java to docker image -->
 	</dependencies>
 
 	<build>
